@@ -19,7 +19,7 @@ def action_logging(input):
 
 def logging(input):
   with open("log.txt", "a") as log:
-    log.write(str(input) + '\n')
+    log.write(input)
 
 def log_function_call(func):
     def wrapper(*args, **kwargs):
