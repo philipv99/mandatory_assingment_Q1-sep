@@ -1,0 +1,61 @@
+[Fri Sep  5 11:15:14 2025]
+connected: [('127.0.0.1', 52543)]
+
+
+[Fri Sep  5 11:15:14 2025]
+message resived: GET /test.html HTTP/1.1
+Host: www.python.com
+
+
+
+
+[Fri Sep  5 11:15:14 2025]
+Calling function: http_host_acceptet with arguments: ('Host: www.python.com\r\n',) and keyword arguments: {}
+Function: http_host_acceptet (Execution time: 0.0010 seconds)
+
+
+[Fri Sep  5 11:15:14 2025]
+Calling function: http_request_line_check with arguments: ('GET /test.html HTTP/1.1\r\n',) and keyword arguments: {}
+Function: http_request_line_check (Execution time: 0.0010 seconds)
+
+
+[Fri Sep  5 11:15:14 2025]
+Calling function: http_request_fill_retrive with arguments: ('/test.html',) and keyword arguments: {}
+Function: http_request_fill_retrive (Execution time: 0.0010 seconds)
+
+
+[Fri Sep  5 11:15:14 2025]
+Calling function: server_HTTP_response with arguments: (200, '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>test</title>\n</head>\n<body>\n  this is test html\n</body>\n</html>') and keyword arguments: {}
+Function: server_HTTP_response (Execution time: 0.0000 seconds)
+
+
+[Fri Sep  5 11:15:14 2025]
+Calling function: send_response_to_client with arguments: ('HTTP/1.1 200 OK\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>test</title>\n</head>\n<body>\n  this is test html\n</body>\n</html>\r\n\r\n',) and keyword arguments: {}
+[Fri Sep  5 11:15:14 2025]
+server responded: HTTP/1.1 200 OK
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+  this is test html
+</body>
+</html>
+
+
+
+
+[Fri Sep  5 11:15:14 2025]
+connection closed
+
+
+Function: send_response_to_client (Execution time: 0.0040 seconds)
+
+
+[Fri Sep  5 11:15:14 2025]
+('127.0.0.1', 52543) connection closed
+
+
